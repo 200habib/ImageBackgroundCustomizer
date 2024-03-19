@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --BackGroundBody:rgb(224, 228, 231);
+  --BackGroundConteiner: white;
+  --black: black;
+  --police: FreeMono, monospace;
+  --text-size:15px;
+  --input-width: 150px;
+  --input-height: 30px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--BackGroundBody);
+}
+
+.container {
+  padding: 30px;
+  height: 400px;
+  width: 400px;
+  box-shadow: 0px 0px 30px 30px rgb(215, 219, 222);
+  background-color: var(--BackGroundConteiner);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: var(--police);
+}
+.container textarea {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+.container .button {
+  height: 50px;
+  background-color: rgb(59, 130, 246);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .InputSize {
+  width: var(--input-width);
+  height: var(--input-height);
+}
+.container .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .ecces {
+  border: 1px solid red;
+  animation: ruotare 0.15s infinite;
+}
+.container .border_red_input {
+  border: 1px solid red;
+}
+@keyframes ruotare {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loding_message {
+  width: 470px;
+  height: 70px;
+  position: relative;
+  margin-top: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--BackGroundConteiner);
+  box-shadow: 0px 0px 50px 55px rgba(147, 147, 147, 0);
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.Backgroundimage {
+  padding: 20px;
+  width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+.text {
+  word-wrap: break-word;
+}/*# sourceMappingURL=style.css.map */

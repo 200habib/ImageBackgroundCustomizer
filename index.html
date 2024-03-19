@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+<div>
+  <form id="greetingForm" class="space-y-4" method="post">
+    <div class="container" id="container">
+      
+      <p>Votre message :</p>
+      <textarea
+        id="TextContent"
+        name="story"
+        rows="5"
+        cols="33"
+        placeholder="Tapez votre message ici..."
+      ></textarea>
+      <div class="flex-container">
+        <div>
+          <label>taille text:</label> <br>
+          <select class="InputSize" id="ChangeSize">
+            <option value="20">Petit</option>
+            <option value="40">Moyen</option>
+            <option value="60">Grand</option>
+          </select>
+        </div>
+        <div>
+            <p>Color text:</p>
+            <input type="color" id="ColorText" class="InputSize"/>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div>
+            <p>Couleur de fond:</p>
+          <input type="color" id="CouleurFond" class="InputSize"/>
+        </div>
+        <div>
+          <p> URL de l'image :</p>
+          <input type="text" id="UrlImage" class="InputSize"/>
+          <p id="text_error"></p>
+        </div>
+      </div>
+      <button class="button" id="summit" type="submit" >Appliquer les reglages</button>
+    </div>
+  </form>
+    <div id="loding_message">
+        <p> Votre message apparatra ici..</p>
+        <div id="content">
+        <p></p>
+    </div>
+    </div>
+  </div>
+ 
+    <script src="script.js"></script>
+  </body>
+</html>
+
