@@ -21,6 +21,6 @@ open index.html
 
 ## 🖼️ Screenshot
 
-![Screenshot](./demo/1.png)
-
 ![Screenshot](./demo/2.png)
+
+![Screenshot](./demo/1.png)
