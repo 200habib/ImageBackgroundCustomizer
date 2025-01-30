@@ -3,60 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Message Customizer</title>
   </head>
 
   <body>
-<div>
-  <form id="greetingForm" class="space-y-4" method="post">
-    <div class="container" id="container">
-      
-      <p>Votre message :</p>
-      <textarea
-        id="TextContent"
-        name="story"
-        rows="5"
-        cols="33"
-        placeholder="Tapez votre message ici..."
-      ></textarea>
-      <div class="flex-container">
-        <div>
-          <label>taille text:</label> <br>
-          <select class="InputSize" id="ChangeSize">
-            <option value="20">Petit</option>
-            <option value="40">Moyen</option>
-            <option value="60">Grand</option>
-          </select>
+    <div class="wrapper">
+      <form id="greetingForm" class="form-container" method="post">
+        <h2 class="title">🎨 Customize Your Message</h2>
+
+        <label for="TextContent">Your Message:</label>
+        <textarea
+          id="TextContent"
+          name="story"
+          rows="5"
+          placeholder="Type your message here..."
+        ></textarea>
+
+        <div class="flex-container">
+          <div>
+            <label for="ChangeSize">Text Size:</label>
+            <select class="input-field" id="ChangeSize">
+              <option value="20">Small</option>
+              <option value="40">Medium</option>
+              <option value="60">Large</option>
+            </select>
+          </div>
+          <div>
+            <label for="ColorText">Text Color:</label>
+            <input type="color" id="ColorText" class="input-field" />
+          </div>
         </div>
-        <div>
-            <p>Color text:</p>
-            <input type="color" id="ColorText" class="InputSize"/>
+
+        <div class="flex-container">
+          <div>
+            <label for="CouleurFond">Background Color:</label>
+            <input type="color" id="CouleurFond" class="input-field" />
+          </div>
+          <div>
+            <label for="UrlImage">Image URL:</label>
+            <input type="text" id="UrlImage" class="input-field" placeholder="Paste image URL..." />
+            <p id="text_error" class="error-message"></p>
+          </div>
         </div>
+
+        <button class="button" id="summit" type="submit">Apply Settings</button>
+      </form>
+
+      <div id="loading_message" class="message-box">
+        <p>Your message will appear here...</p>
+        <div id="content"></div>
       </div>
-      <div class="flex-container">
-        <div>
-            <p>Couleur de fond:</p>
-          <input type="color" id="CouleurFond" class="InputSize"/>
-        </div>
-        <div>
-          <p> URL de l'image :</p>
-          <input type="text" id="UrlImage" class="InputSize"/>
-          <p id="text_error"></p>
-        </div>
-      </div>
-      <button class="button" id="summit" type="submit" >Appliquer les reglages</button>
     </div>
-  </form>
-    <div id="loding_message">
-        <p> Votre message apparatra ici..</p>
-        <div id="content">
-        <p></p>
-    </div>
-    </div>
-  </div>
- 
+
     <script src="script.js"></script>
   </body>
 </html>
-

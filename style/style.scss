@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --background-body: #f3f4f6;
+    --background-container: white;
+    --primary-color: #3b82f6;
+    --text-color: #333;
+    --border-radius: 12px;
+    --font-family: "Arial", sans-serif;
+    --input-width: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-body);
+    font-family: var(--font-family);
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-container {
+    background: var(--background-container);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+  
+  label {
+    font-weight: bold;
+    color: var(--text-color);
+    display: block;
+    margin-top: 10px;
+  }
+  
+  textarea {
+    width: var(--input-width);
+    height: 100px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .button {
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    // transition: background 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: #2563eb;
+    }
+  }
+  
+  .message-box {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--background-container);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
