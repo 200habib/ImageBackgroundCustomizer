@@ -17,7 +17,7 @@ To use this project, simply clone the repository and open `index.html` in your b
 git clone https://github.com/yourusername/ImageBackgroundCustomizer.git
 cd ImageBackgroundCustomizer
 open index.html
-
+```
 
 ## 🖼️ Screenshot
 
